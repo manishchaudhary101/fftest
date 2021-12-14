@@ -8,8 +8,7 @@ mv composer.phar /usr/local/bin/composer
 
 cd /var/app/current/
 
-chmod -R 0777 storage
+composer require inspector-apm/inspector-laravel
 
 composer update
 
-composer require inspector-apm/inspector-laravel
