@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 chown -R ec2-user /var/app/current
 
