@@ -1,0 +1,20 @@
+version: 0.2
+phases:
+   install:
+     runtime-versions:
+         php: 7.3
+         nodejs: 12.x
+     commands:
+         - apt-get update -y
+         - curl -sS <https://getcomposer.org/installer> | php -- --install-dir=/usr/local/bin --filename=composer
+   pre_build:
+     commands:
+         - composer update
+   build:
+     commands:
+        - composer require inspector-apm/inspector-laravel
+
+artifacts:
+   files:
+         - '**/*'
+   name: $(date +%Y-%m-%dT%H:%M:%S).zip
