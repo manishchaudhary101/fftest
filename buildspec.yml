@@ -21,14 +21,12 @@ phases:
          - mkdir framework/testing
          - mkdir framework/views
          - cd ..
-         - php artisan cache:clear
-         - php artisan config:clear
-         - php artisan view:clear
-         
-         
    build:
      commands:
         - composer update
+        - php artisan cache:clear
+        - php artisan config:clear
+        - php artisan view:clear
         - composer require inspector-apm/inspector-laravel
 
 artifacts:
