@@ -20,6 +20,9 @@ phases:
          - mkdir framework/sessions
          - mkdir framework/testing
          - mkdir framework/views
+         - php artisan cache:clear
+         - php artisan config:clear
+         - php artisan view:clear
          - cd ..
          
    build:
