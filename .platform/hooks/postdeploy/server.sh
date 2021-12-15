@@ -1,5 +1,9 @@
 #!/bin/bash
-
+ls
+cd var/
+ls
+cd www/
+ls
 chown -R ec2-user /var/www/html
 
 sudo curl -sS https://getcomposer.org/installer | sudo php
