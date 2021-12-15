@@ -6,10 +6,11 @@ phases:
          nodejs: 12.x
      commands:
          - apt-get update -y
-         - curl -sS <https://getcomposer.org/installer> | php -- --install-dir=/usr/local/bin --filename=composer
+         - curl -sS https://getcomposer.org/installer | php
+         - mv composer.phar /usr/local/bin/composer
    pre_build:
      commands:
-         - composer update
+         - composer install
    build:
      commands:
         - composer require inspector-apm/inspector-laravel
