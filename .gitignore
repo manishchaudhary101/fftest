@@ -18,4 +18,3 @@ encode_to_fit.cfg
 *.cfg
 /encode.bak
 .DS_Store
-.platform/*
