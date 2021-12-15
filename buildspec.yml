@@ -15,10 +15,12 @@ phases:
          - cd storage/
          - mkdir logs
          - mkdir framework
-         - mkdir framework/cache && framework/cache/data
+         - mkdir framework/cache 
+         - mkdir framework/cache/data
          - mkdir framework/sessions
          - mkdir framework/testing
          - mkdir framework/views
+         - cd ..
          
    build:
      commands:
