@@ -10,9 +10,13 @@ phases:
          - mv composer.phar /usr/local/bin/composer
    pre_build:
      commands:
-         - composer update
+         - cd storage/
+         - mkdir -p framework/{sessions,views,cache}
+         - chmod -R 777 framework
+         
    build:
      commands:
+        - composer update
         - composer require inspector-apm/inspector-laravel
 
 artifacts:
