@@ -10,7 +10,7 @@ phases:
          - mv composer.phar /usr/local/bin/composer
    pre_build:
      commands:
-         - composer install
+         - composer update
    build:
      commands:
         - composer require inspector-apm/inspector-laravel
