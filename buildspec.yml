@@ -12,6 +12,7 @@ phases:
      commands:
          - ls
          - composer update
+         - ls
          
    build:
      commands:
