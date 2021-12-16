@@ -3,7 +3,6 @@ phases:
    install:
      runtime-versions:
          php: 7.3
-         nodejs: 12.x
      commands:
          - apt-get update -y
          - curl -sS https://getcomposer.org/installer | php
@@ -12,8 +11,6 @@ phases:
      commands:
          - ls
          - composer update
-         - ls
-         
    build:
      commands:
         - composer require inspector-apm/inspector-laravel
