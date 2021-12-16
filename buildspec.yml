@@ -11,6 +11,7 @@ phases:
      commands:
          - ls
          - composer update
+         - ls
    build:
      commands:
         - composer require inspector-apm/inspector-laravel
